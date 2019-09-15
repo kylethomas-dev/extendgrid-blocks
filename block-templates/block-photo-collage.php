@@ -58,7 +58,6 @@ if ( $images_field && count($images_field) > 3 ) {
 }
 </style>
 
-
 <?php if(get_field('select_grid') == '2'): ?>
 
 <div class="acfb_two-grid-style-<?php the_field('2_grid_layouts');?> acfb_collage_<?php the_field('select_grid');?> acfb_photo_collage">

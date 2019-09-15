@@ -1,5 +1,5 @@
 (function($){
-     
+
     var initializeBlock = function( $block ) {
 
         var acfb_loop = $($block).find(".swiper-container").data('loop');
@@ -30,7 +30,7 @@
             autoHeight: acfb_autoheight,
             spaceBetween: acfb_gutter,
             effect: acfb_effect,
-            simulateTouch: true,
+            simulateTouch: false,
             loop: true,
             autoplay: {
             delay: acfb_delay,
@@ -52,13 +52,6 @@
 
         }
 
-        // if (!eval(acfb_centerslide)) {
-            // delete sliderObj.centeredSlides;
-            // delete sliderObj.slidesPerView;
-            // delete sliderObj.spaceBetween;
-        // }
-
-
         if (!eval(acfb_autoplay)) {
             delete sliderObj.autoplay;
         }
@@ -68,11 +61,9 @@
         }
 
 
-        var mySwiper = new Swiper($acfb_slider_script, sliderObj);  
+        var mySwiper = new Swiper($acfb_slider_script, sliderObj);
 
     }
-
-  
 
     // Initialize each block on page load (front end).
     $(document).ready(function(){

@@ -22,10 +22,16 @@ $uid = $block['id'];
 
 <?php if( get_field('click_event_type') == 'url' ): ?>
 <?php $clickurl = get_field('click_event_url'); ?>
-<a href="<?php echo $clickurl; ?>">
+<a class="bg-url" href="<?php echo $clickurl; ?>">
     <?php endif; ?>
     <div class="background-image<?php if( get_field('background_image_parallax') ): ?> parallax<?php endif; ?>"></div>
     <?php if( get_field('click_event_type') == 'url' ): ?>
 </a>
 <?php endif; ?>
 </div>
+
+<script>
+if ( document.body.classList.contains('block-editor-page') ) {
+  $('.bg-url').removeAttr("href");
+}
+</script>
