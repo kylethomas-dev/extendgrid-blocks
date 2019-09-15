@@ -196,6 +196,9 @@ function my_acf_init() {
 	        'keywords'			=> array( 'photo-collage' ),
             'enqueue_assets' => function(){
 			  wp_enqueue_style( 'egrid-blocks-css', plugin_dir_url( __FILE__ ) . 'css/egridblocks.css' );
+				wp_enqueue_script('jQuery');
+				wp_enqueue_script( 'egrid-magnific-js' ,plugin_dir_url( __FILE__ ) . 'js/jquery.magnific-popup.min.js', array('jquery'), '', true );
+				wp_enqueue_style( 'egrid-magnific-css', plugin_dir_url( __FILE__ ) . 'css/magnific-popup.css' );
 			},
         ));
 

@@ -47,6 +47,18 @@ if ( $images_field && count($images_field) > 3 ) {
 
 ?>
 
+<script>
+$(document).ready(function() {
+
+  $('.gallery-item').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
+
+});
+</script>
 
 <div class="<?php echo $uid; ?> <?php echo esc_attr($className); ?>">
 <style type="text/css">
@@ -61,25 +73,25 @@ if ( $images_field && count($images_field) > 3 ) {
 <?php if(get_field('select_grid') == '2'): ?>
 
 <div class="acfb_two-grid-style-<?php the_field('2_grid_layouts');?> acfb_collage_<?php the_field('select_grid');?> acfb_photo_collage">
-  <div class="acfb_one" style="background-image: url('<?php echo $images0; ?>');"></div>
-  <div class="acfb_two" style="background-image: url('<?php echo $images1; ?>');"></div>
+  <div class="acfb_one gallery-item" data-mfp-src="<?php echo $images0; ?>" style="background-image: url('<?php echo $images0; ?>');"></div>
+  <div class="acfb_two gallery-item" data-mfp-src="<?php echo $images1; ?>" style="background-image: url('<?php echo $images1; ?>');"></div>
 </div>
 
 <?php elseif( get_field('select_grid') == '3' ): ?>
 
 <div class="acfb_three-grid-style-<?php the_field('3_grid_layouts');?> acfb_collage_<?php the_field('select_grid');?> acfb_photo_collage">
-  <div class="acfb_one" style="background-image: url('<?php echo $images0; ?>');"></div>
-  <div class="acfb_two" style="background-image: url('<?php echo $images1; ?>');"></div>
-  <div class="acfb_three" style="background-image: url('<?php echo $images2; ?>');"></div>
+  <div class="acfb_one gallery-item" data-mfp-src="<?php echo $images0; ?>" style="background-image: url('<?php echo $images0; ?>');"></div>
+  <div class="acfb_two gallery-item" data-mfp-src="<?php echo $images1; ?>" style="background-image: url('<?php echo $images1; ?>');"></div>
+  <div class="acfb_three gallery-item" data-mfp-src="<?php echo $images2; ?>" style="background-image: url('<?php echo $images2; ?>');"></div>
 </div>
 
 <?php elseif( get_field('select_grid') == '4' ): ?>
 
 <div class="acfb_four-grid-style-<?php the_field('4_grid_layouts');?> acfb_collage_<?php the_field('select_grid');?> acfb_photo_collage">
-  <div class="acfb_one" style="background-image: url('<?php echo $images0; ?>');"></div>
-  <div class="acfb_two" style="background-image: url('<?php echo $images1; ?>');"></div>
-  <div class="acfb_three" style="background-image: url('<?php echo $images2; ?>');"></div>
-  <div class="acfb_four" style="background-image: url('<?php echo $images3; ?>');"></div>
+  <div class="acfb_one gallery-item" data-mfp-src="<?php echo $images0; ?>" style="background-image: url('<?php echo $images0; ?>');"></div>
+  <div class="acfb_two gallery-item" data-mfp-src="<?php echo $images1; ?>" style="background-image: url('<?php echo $images1; ?>');"></div>
+  <div class="acfb_three gallery-item" data-mfp-src="<?php echo $images2; ?>" style="background-image: url('<?php echo $images2; ?>');"></div>
+  <div class="acfb_four gallery-item" data-mfp-src="<?php echo $images3; ?>" style="background-image: url('<?php echo $images3; ?>');"></div>
 </div>
 
 <?php endif; ?>
