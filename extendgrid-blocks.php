@@ -316,27 +316,3 @@ function my_acf_init() {
 
 	}
 }
-
-function my_acf_block_render_callback( $block ) {
-
-	// convert name ("acf/testimonial") into path friendly slug ("testimonial")
-	$slug = str_replace('acf/', '', $block['name']);
-
-	// include a template part from within the "template-parts/block" folder
-	if( file_exists(plugin_dir_path( __FILE__ ) . "/block-templates/block-{$slug}.php") ) {
-		include(plugin_dir_path( __FILE__ ) . "/block-templates/block-{$slug}.php" );
-	}
-}
-
-// Excerpt Limit
-function egrid_excerpt($egrid_excerpt_limit) {
-  $egrid_excerpt = explode(' ', get_the_excerpt(), $egrid_excerpt_limit);
-  if (count($egrid_excerpt)>=$egrid_excerpt_limit) {
-    array_pop($egrid_excerpt);
-    $egrid_excerpt = implode(" ",$egrid_excerpt).'...';
-  } else {
-    $egrid_excerpt = implode(" ",$egrid_excerpt);
-  }
-  $egrid_excerpt = preg_replace('`[[^]]*]`','',$egrid_excerpt);
-  return $egrid_excerpt;
-}
