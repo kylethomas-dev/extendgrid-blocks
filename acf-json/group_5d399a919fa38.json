@@ -32,19 +32,19 @@
                 "id": ""
             },
             "layouts": {
-                "layout_5d40327abc7dc": {
-                    "key": "layout_5d40327abc7dc",
+                "layout_5d399ac222055": {
+                    "key": "layout_5d399ac222055",
                     "name": "text_field_layout",
                     "label": "Text Field",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d4032cc88a2b",
-                            "label": "Label",
+                            "key": "field_5d399acedd56d",
+                            "label": "Title",
                             "name": "title_field",
                             "type": "text",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -58,7 +58,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5d4032d388a2c",
+                            "key": "field_5d3a17ba6cf7c",
                             "label": "Description",
                             "name": "description_field",
                             "type": "textarea",
@@ -73,11 +73,11 @@
                             "default_value": "",
                             "placeholder": "",
                             "maxlength": "",
-                            "rows": 2,
+                            "rows": "",
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5d4032ef88a2e",
+                            "key": "field_5d3a17e86cf7d",
                             "label": "Placeholder",
                             "name": "placeholder_field",
                             "type": "text",
@@ -96,80 +96,8 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5d4e9441cb592",
-                            "label": "Validation",
-                            "name": "validation",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "text": "Text",
-                                "number": "Number",
-                                "email": "Email",
-                                "url": "Website",
-                                "phone": "Phone"
-                            },
-                            "default_value": [
-                                "text"
-                            ],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_5d4e97584b2e5",
-                            "label": "Phone No. Formatting",
-                            "name": "phone_validation",
-                            "type": "select",
-                            "instructions": "Select the format you would like to use.<br>\r\n<b>NB:<\/b> If you intend on accepting international numbers select <code>No Formatting<\/code>",
-                            "required": 1,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5d4e9441cb592",
-                                        "operator": "==",
-                                        "value": "phone"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "NNNNNNNNNNNN": "No Formatting",
-                                "(0A) NNNN NNNN": "(0A) NNNN NNNN (AU)",
-                                "(0A) NNN-NNNN": "(0A) NNN-NNNN (NZ)",
-                                "(AAA) NNNN NNNN": "(AAA) NNNN NNNN (UK 8 Digit)",
-                                "(AAAA) NNN NNNN": "(AAAA) NNN NNNN (UK 7 Digit)",
-                                "(AAAAA) NNNNNN": "(AAAAA) NNNNNN (UK 6 Digit)",
-                                "(AAAA AA) NNNNN": "(AAAA AA) NNNNN (UK 5 Digit)",
-                                "(AAAA AAA) NNNN": "(AAAA AAA) NNNN (UK 4 Digit)",
-                                "(AAA) NNN-NNNN": "(AAA) NNN-NNNN (US\/CA)"
-                            },
-                            "default_value": [
-                                "NNNNNNNNNNNN"
-                            ],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_5d40330a88a2f",
-                            "label": "Required",
+                            "key": "field_5d3a18176cf7e",
+                            "label": "Required Field",
                             "name": "required_field",
                             "type": "true_false",
                             "instructions": "",
@@ -183,26 +111,26 @@
                             "message": "",
                             "default_value": 0,
                             "ui": 1,
-                            "ui_on_text": "",
-                            "ui_off_text": ""
+                            "ui_on_text": "Yes",
+                            "ui_off_text": "No"
                         }
                     ],
                     "min": "",
                     "max": ""
                 },
-                "layout_5d4e952b64bf2": {
-                    "key": "layout_5d4e952b64bf2",
-                    "name": "dropdown_layout",
-                    "label": "Dropdown Field",
+                "layout_5d3d7ccfde219": {
+                    "key": "layout_5d3d7ccfde219",
+                    "name": "textarea_field_layout",
+                    "label": "Textarea Field",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d4e952b64bf3",
-                            "label": "Label",
+                            "key": "field_5d3d7ccfde21a",
+                            "label": "Title",
                             "name": "title_field",
                             "type": "text",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -216,31 +144,12 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5d4e952b64bf4",
+                            "key": "field_5d3d7ccfde21b",
                             "label": "Description",
                             "name": "description_field",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": 2,
-                            "new_lines": ""
-                        },
-                        {
-                            "key": "field_5d4e957664bf8",
-                            "label": "Options",
-                            "name": "options",
-                            "type": "textarea",
-                            "instructions": "Enter each dropdown choice on a new line.<br>\r\nYou are able to specify both a value and label by separating them with a colon. For example:<br>\r\n<br>\r\nred:Red",
-                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -254,9 +163,9 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5d4e952b64bf5",
-                            "label": "Default Option",
-                            "name": "default_option",
+                            "key": "field_5d3d7ccfde21c",
+                            "label": "Placeholder",
+                            "name": "placeholder_field",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -273,8 +182,8 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5d4e952b64bf7",
-                            "label": "Required",
+                            "key": "field_5d3d7ccfde21d",
+                            "label": "Required Field",
                             "name": "required_field",
                             "type": "true_false",
                             "instructions": "",
@@ -288,222 +197,17 @@
                             "message": "",
                             "default_value": 0,
                             "ui": 1,
-                            "ui_on_text": "",
-                            "ui_off_text": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5d4e96d164bf9": {
-                    "key": "layout_5d4e96d164bf9",
-                    "name": "text_area_layout",
-                    "label": "Text Area",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5d4e96d164bfa",
-                            "label": "Label",
-                            "name": "title_field",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5d4e96d164bfb",
-                            "label": "Description",
-                            "name": "description_field",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": 2,
-                            "new_lines": ""
-                        },
-                        {
-                            "key": "field_5d4e96d164bfe",
-                            "label": "Required",
-                            "name": "required_field",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui": 1,
-                            "ui_on_text": "",
-                            "ui_off_text": ""
+                            "ui_on_text": "Yes",
+                            "ui_off_text": "No"
                         }
                     ],
                     "min": "",
                     "max": ""
                 }
             },
-            "button_label": "Add Field",
+            "button_label": "Add Form Field",
             "min": "",
             "max": ""
-        },
-        {
-            "key": "field_5d4f80aebc6e7",
-            "label": "Mail",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5d4f80f026b40",
-            "label": "To",
-            "name": "form_to_address",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5d4f810726b41",
-            "label": "From",
-            "name": "form_from_address",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5d4f811326b42",
-            "label": "Subject",
-            "name": "form_subject",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5d52aac468700",
-            "label": "Design",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5d52aaef68703",
-            "label": "Form Button Text",
-            "name": "form_button_text",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Message",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5d52aad568701",
-            "label": "Button Colour",
-            "name": "form_button_colour",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#000000"
-        },
-        {
-            "key": "field_5d52aae368702",
-            "label": "Button Font Colour",
-            "name": "form_button_font_colour",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#FFFFFF"
         }
     ],
     "location": [
@@ -523,5 +227,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567421728
+    "modified": 1564310745
 }

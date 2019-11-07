@@ -6,7 +6,7 @@
             "key": "field_5d3d73b80f052",
             "label": "Select Form",
             "name": "select_form",
-            "type": "page_link",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -20,8 +20,9 @@
             ],
             "taxonomy": "",
             "allow_null": 0,
-            "allow_archives": 0,
-            "multiple": 0
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         }
     ],
     "location": [
@@ -41,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567421684
+    "modified": 1564309633
 }

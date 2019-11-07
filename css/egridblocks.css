@@ -613,11 +613,10 @@
 
 /************ Image Slider CSS ************/
 
-.acfb_slider_block{}
-
-.acfb_slider_block .swiper-container{}
-
-.acfb_slider_block .swiper-container .swiper-wrapper{}
+.acfb_slider_block .swiper-container .swiper-wrapper .swiper-slide {
+  height: 100%!important;
+  display: flex;
+}
 
 .acfb_slider_block .swiper-container .swiper-wrapper .swiper-slide{
   position: relative;

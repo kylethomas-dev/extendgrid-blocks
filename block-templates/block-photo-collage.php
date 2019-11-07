@@ -47,19 +47,6 @@ if ( $images_field && count($images_field) > 3 ) {
 
 ?>
 
-<script>
-$(document).ready(function() {
-
-  $('.gallery-item').magnificPopup({
-    type: 'image',
-    gallery:{
-      enabled:true
-    }
-  });
-
-});
-</script>
-
 <div class="<?php echo $uid; ?> <?php echo esc_attr($className); ?>">
 <style type="text/css">
 
@@ -95,5 +82,18 @@ $(document).ready(function() {
 </div>
 
 <?php endif; ?>
+
+<script type="text/javascript">
+$(document).ready(function() {
+if ( !document.body.classList.contains('block-editor-page') ) {
+  $('.gallery-item').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
+}
+});
+</script>
 
 </div><!-- Uid -->
